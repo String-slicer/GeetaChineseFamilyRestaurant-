@@ -42,8 +42,8 @@ export default function Navbar({ cartCount, onCartClick }) {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
         isScrolled
-          ? "bg-[#09090b]/80 backdrop-blur-md border-b border-white/5 py-4 shadow-lg"
-          : "bg-transparent py-6"
+          ? "bg-black border-b border-white/5 py-4 shadow-lg"
+          : "bg-transparent md:bg-transparent bg-black py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -142,7 +142,7 @@ export default function Navbar({ cartCount, onCartClick }) {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[73px] bg-[#09090b]/95 backdrop-blur-xl z-50 animate-fade-in-up py-12 px-6 flex flex-col gap-6 text-center border-t border-white/5">
+        <div className="md:hidden fixed inset-0 top-[73px] bg-black z-50 animate-fade-in-up py-12 px-6 flex flex-col gap-6 text-center border-t border-white/5">
           <a
             href="#hero"
             onClick={(e) => handleLinkClick(e, "hero")}
@@ -192,3 +192,4 @@ export default function Navbar({ cartCount, onCartClick }) {
     </header>
   );
 }
+
