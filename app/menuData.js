@@ -398,7 +398,7 @@ const rawVegItems = [
   {
     "category": "Rice",
     "item_name": "Veg. Triple Rice",
-    "half_price": 100,
+    "half_price": 110,
     "full_price": 190
   },
   {
@@ -411,7 +411,7 @@ const rawVegItems = [
     "category": "Rice",
     "item_name": "Veg. Chopper Rice",
     "half_price": 130,
-    "full_price": 180
+    "full_price": 210
   },
   {
     "category": "Rice",

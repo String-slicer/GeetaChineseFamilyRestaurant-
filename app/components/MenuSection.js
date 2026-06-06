@@ -92,7 +92,7 @@ export default function MenuSection({ onAddToCart }) {
                 }`}
               >
                 <Leaf className="w-3.5 h-3.5" />
-                Pure Veg
+                 Veg
               </button>
               <button
                 onClick={() => setVegFilter("NonVeg")}

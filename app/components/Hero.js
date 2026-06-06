@@ -113,8 +113,8 @@ export default function Hero({ onExploreMenu }) {
                 <Leaf className="w-4 h-4 text-[#10b981]" />
               </div>
               <div className="text-left">
-                <span className="block text-[10px] uppercase tracking-wider text-zinc-400 leading-none">Separate Kitchen</span>
-                <span className="text-white text-xs font-bold font-serif text-[#10b981]">100% Pure Veg</span>
+                <span className="block text-[10px] uppercase tracking-wider text-zinc-400 leading-none"> Authentic Taste</span>
+                <span className="text-white text-xs font-bold font-serif text-[#10b981]">Chinese Specialities</span>
               </div>
             </div>
 
