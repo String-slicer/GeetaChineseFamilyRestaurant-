@@ -40,14 +40,14 @@ export const metadata = {
 
   publisher: "Geeta Chinese Family Restaurant",
 
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://geeta-chinese-family-restaurant.vercel.app/"),
 
   openGraph: {
     title:
       "Geeta Chinese Family Restaurant | Best Chinese Restaurant in Nallasopara East",
     description:
       "Enjoy authentic Chinese cuisine, noodles, fried rice, soups, and family dining at Geeta Chinese Family Restaurant, Nallasopara East.",
-    url: "https://your-domain.com",
+    url: "hhttps://geeta-chinese-family-restaurant.vercel.app/",
     siteName: "Geeta Chinese Family Restaurant",
     locale: "en_IN",
     type: "website",

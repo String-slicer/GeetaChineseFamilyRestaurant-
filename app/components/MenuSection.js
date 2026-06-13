@@ -83,6 +83,7 @@ export default function MenuSection({ onAddToCart }) {
               >
                 All Food
               </button>
+              
               <button
                 onClick={() => setVegFilter("Veg")}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 py-2 px-5 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${

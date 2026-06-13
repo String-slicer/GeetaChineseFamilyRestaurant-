@@ -1,12 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Star, ShoppingBag, Leaf, Flame, Check } from "lucide-react";
 
 export default function DishCard({ dish, onAddToCart }) {
   const [selectedSize, setSelectedSize] = useState("Full"); // "Full" or "Half"
   const [isAdded, setIsAdded] = useState(false);
+  const [imgSrc, setImgSrc] = useState(dish.image || "/hero_dish.png");
+
+  useEffect(() => {
+    setImgSrc(dish.image || "/hero_dish.png");
+  }, [dish.image]);
 
   const currentPrice =
     dish.hasHalfOption && selectedSize === "Half"
@@ -26,11 +31,19 @@ export default function DishCard({ dish, onAddToCart }) {
       {/* Dish Image container */}
       <div className="relative h-56 w-full overflow-hidden bg-zinc-900">
         <Image
-          src={dish.image}
+          src={imgSrc}
           alt={dish.name}
           fill
           sizes="(max-w-768px) 100vw, 30vw"
           className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+          onError={() => {
+            const categoryDefault = 
+              dish.category === "Soup" ? "/default_soup.jpg" :
+              dish.category === "Starter" ? "/default_starter.jpg" :
+              dish.category === "Noodles" ? "/default_noodles.jpg" :
+              dish.category === "Rice" ? "/default_rice.jpg" : "/hero_dish.png";
+            setImgSrc(categoryDefault);
+          }}
         />
         
         {/* Dark overlay */}

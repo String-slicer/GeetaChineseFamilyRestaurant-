@@ -35,6 +35,10 @@ export default function Hero({ onExploreMenu }) {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Award Winning Culinary Experience</span>
           </div>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 text-[#d4af37] text-sm font-semibold mb-6">
+  <Calendar className="w-4 h-4" />
+  <span>Proudly Serving Since 2005</span>
+</div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-tight mb-6">
             Savor the Art of <br />
